@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 75e32ec762cff1041842196ee6c123c2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Player: {fileID: 4337450790123841314, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
+  - pitStopController: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
