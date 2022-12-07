@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LongSpeedUp : MonoBehaviour
 {
-    [SerializeField] private float longPowerUpDuration = 5f;
+    private float longPowerUpDuration = 5.8f;
 
     public PlayerController playerController;
     
@@ -21,7 +21,7 @@ public class LongSpeedUp : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             longSpeedUpActivated = true;
-            playerController.kartSpeed = 35f;
+            playerController.kartSpeed = 40f;
             StartCoroutine(LongPowerUpEffect());
         }
     }
