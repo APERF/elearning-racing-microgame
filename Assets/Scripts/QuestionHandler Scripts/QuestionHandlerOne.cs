@@ -10,18 +10,8 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public Button openTrackTwo;
     public Button openTrackThree;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Button openTrackFour;
+    public Button openTrackFive;
 
     public void OpenQuestionOne()
     {
@@ -55,5 +45,61 @@ public class QuestionHandlerOne : MonoBehaviour
     public void OpenTrackThree()
     {
         SceneManager.LoadScene(4);
+    }
+
+    public void OpenQuestionThree()
+    {
+        Application.OpenURL("https://gamedevacademy.org/unity-vs-unreal/");
+        StartCoroutine(QuestionThreeContinue());
+    }
+
+    IEnumerator QuestionThreeContinue()
+    {
+        yield return new WaitForSeconds(questionDelay);
+        openTrackFour.gameObject.SetActive(true);
+    }
+
+    public void OpenTrackFour()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void OpenQuestionFour()
+    {
+        Application.OpenURL("https://media.cnn.com/api/v1/images/stellar/prod/221130093222-09-mauna-loa-eruption-gallery.jpg?c=original");
+        StartCoroutine(QuestionFourContinue());
+    }
+
+    IEnumerator QuestionFourContinue()
+    {
+        yield return new WaitForSeconds(questionDelay);
+        openTrackFour.gameObject.SetActive(true);
+    }
+
+    public void OpenTrackFive()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void OpenQuestionFive()
+    {
+        Application.OpenURL("https://www.reddit.com/r/Unity3D/comments/begito/sorry_but_unity_is_indeed_garbage/");
+        StartCoroutine(QuestionFiveContinue());
+    }
+
+    IEnumerator QuestionFiveContinue()
+    {
+        yield return new WaitForSeconds(questionDelay);
+        openTrackFive.gameObject.SetActive(true);
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene(10);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

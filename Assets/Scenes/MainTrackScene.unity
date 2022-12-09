@@ -388,8 +388,8 @@ Transform:
   - {fileID: 103333286}
   - {fileID: 1836569211}
   - {fileID: 400420036}
-  - {fileID: 1284452882}
   - {fileID: 566503984}
+  - {fileID: 1284452882}
   m_Father: {fileID: 2005900497}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3040,7 +3040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276925260861940167, guid: 419b5557461398443a4b99d9496015fc, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7276925260861940167, guid: 419b5557461398443a4b99d9496015fc, type: 3}
       propertyPath: m_LocalScale.y
@@ -4637,7 +4637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9148960239488163218, guid: 87e0acbd6ddf7814097e377d5a5c716d, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 9148960239488163218, guid: 87e0acbd6ddf7814097e377d5a5c716d, type: 3}
       propertyPath: m_LocalScale.y
@@ -6535,28 +6535,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8049907621329533821, guid: 419b5557461398443a4b99d9496015fc, type: 3}
   m_PrefabInstance: {fileID: 566503983}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1063237581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063237564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcf347db1aae3fa409a748fec0e6009f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  atStart: 1
-  pitStopOnePassed: 0
-  pitStopTwoPassed: 0
-  pitStopThreePassed: 0
-  pitStopFourPassed: 0
-  pitStopFivePassed: 0
-  pitStopOne: {x: -180.4, y: 0.32, z: -1948.2}
-  pitStopTwo: {x: -312.7, y: 0.21, z: -1800.6}
-  pitStopThree: {x: -464.8, y: 0.21, z: -1728.3}
-  pitStopFour: {x: -357.7, y: 0.21, z: -1531.7}
 --- !u!65 &1063237585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6570,6 +6548,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.000005, y: 1.4977303, z: 0.15676875}
   m_Center: {x: 3.0640892e-15, y: 0.75790155, z: 0.715616}
+--- !u!114 &1063237589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063237564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e7f220ddc25a24880d03234e3cdf8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1067749948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7421,6 +7411,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2204011569307904114, guid: 5875952ac18f14a4e8726559766c0a26, type: 3}
   m_PrefabInstance: {fileID: 1177074034}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1186502093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186502095}
+  - component: {fileID: 1186502094}
+  m_Layer: 0
+  m_Name: PitStop Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1186502094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186502093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf347db1aae3fa409a748fec0e6009f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 1
+  pitStopOnePassed: 0
+  pitStopTwoPassed: 0
+  pitStopThreePassed: 0
+  pitStopFourPassed: 0
+  pitStopFivePassed: 0
+  pitStopOne: {x: -180.4, y: 0.32, z: -1948.2}
+  pitStopTwo: {x: -312.7, y: 0.32, z: -1800.5}
+  pitStopThree: {x: -464.8, y: 0.32, z: -1728.3}
+  pitStopFour: {x: -357.7, y: 0.32, z: -1531.7}
+--- !u!4 &1186502095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186502093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -183.79648, y: 3.0932512, z: -1947.0533}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1187885643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10766,7 +10810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1791477064
 BoxCollider:
@@ -11729,7 +11773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339406665019111178, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4339406665019111178, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12136,7 +12180,7 @@ Transform:
   - {fileID: 1001294835}
   - {fileID: 1104148668}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2018563253
 PrefabInstance:

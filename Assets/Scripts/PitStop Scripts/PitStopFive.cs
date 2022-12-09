@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PitStopFive : MonoBehaviour
 {
@@ -23,8 +24,9 @@ public class PitStopFive : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("Pit Stop 5"))
         {
             Debug.Log("Load Question 5 Triggered");
-            pitStopController.pitStopFivePassed = true;
+            pitStopController.atStart = true;
             pitStopController.pitStopFourPassed = false;
+            SceneManager.LoadScene(9);
         }
     }
 }

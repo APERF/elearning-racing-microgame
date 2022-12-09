@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PitStopFour : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class PitStopFour : MonoBehaviour
             Debug.Log("Load Question 4 Triggered");
             pitStopController.pitStopFourPassed = true;
             pitStopController.pitStopThreePassed = false;
+            SceneManager.LoadScene(7);
         }
     }
 }

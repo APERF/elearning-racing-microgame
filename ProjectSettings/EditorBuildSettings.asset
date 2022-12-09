@@ -9,15 +9,33 @@ EditorBuildSettings:
     path: Assets/Scenes/MainTrackScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Question 1 Scene.unity
+    path: Assets/Scenes/Question1Scene.unity
     guid: aab0b2b6c91ab624cbfc123d148cd364
   - enabled: 1
     path: Assets/Scenes/MainTrackScene2.unity
     guid: eb5d2562c06e00d4191934589a5fe896
   - enabled: 1
-    path: Assets/Scenes/Question 2 Scene.unity
+    path: Assets/Scenes/Question2Scene.unity
     guid: 72b09f06176a09940b907c9d00f4e70f
   - enabled: 1
     path: Assets/Scenes/MainTrackScene3.unity
     guid: 9977a7bb47637aa42afdce3a6a614b09
+  - enabled: 1
+    path: Assets/Scenes/Question3Scene.unity
+    guid: 751de7288af7e08499783024e280e5dd
+  - enabled: 1
+    path: Assets/Scenes/MainTrackScene4.unity
+    guid: 751fe3758da560045a727b8067673b8b
+  - enabled: 1
+    path: Assets/Scenes/Question4Scene.unity
+    guid: be289be9ea28f1a42a528ed9ac333a83
+  - enabled: 1
+    path: Assets/Scenes/MainTrackScene5.unity
+    guid: 964160bc8082a85469e442c0bd5f8325
+  - enabled: 1
+    path: Assets/Scenes/Question5Scene.unity
+    guid: a268be07af8ebb845b6c5d87d0ef1ff1
+  - enabled: 1
+    path: Assets/Scenes/GameOverPlaceholder.unity
+    guid: 09cdf818cb2abb64b8e9f957dc60b403
   m_configObjects: {}
