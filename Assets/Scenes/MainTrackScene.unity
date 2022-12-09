@@ -6568,8 +6568,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15.000005, y: 1.5067667, z: 0.15676875}
-  m_Center: {x: 3.0640892e-15, y: 0.75338334, z: 0.715616}
+  m_Size: {x: 15.000005, y: 1.4977303, z: 0.15676875}
+  m_Center: {x: 3.0640892e-15, y: 0.75790155, z: 0.715616}
 --- !u!1001 &1067749948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8180,7 +8180,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1364981865
 PrefabInstance:
@@ -11701,7 +11701,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2033771807926111362, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_Convex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4337450790123841314, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_Name
@@ -11729,7 +11729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339406665019111178, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4339406665019111178, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_LocalPosition.x
