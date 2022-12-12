@@ -13,6 +13,13 @@ public class QuestionHandlerOne : MonoBehaviour
     public Button openTrackFour;
     public Button openTrackFive;
 
+    public PitStopController pitStopController;
+
+    void Start()
+    {
+        pitStopController = GameObject.FindObjectOfType<PitStopController>();
+    }
+
     public void OpenQuestionOne()
     {
         Application.OpenURL("https://www.google.com");
@@ -100,6 +107,12 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void RestartGame()
     {
+        SceneManager.LoadScene(0);
+    }
+
+    public void MenuStart()
+    {
         SceneManager.LoadScene(1);
+        pitStopController.raceStarted = false;
     }
 }

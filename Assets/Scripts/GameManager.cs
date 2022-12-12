@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,12 +23,6 @@ public class GameManager : MonoBehaviour
         
         playerStartRotation = Quaternion.Euler(0f, 0f, 0f);
         otherStartRotation = Quaternion.Euler(0f, -90f, 0f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void OnTriggerEnter(Collider other)

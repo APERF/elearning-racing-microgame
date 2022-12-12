@@ -28,14 +28,15 @@ public class OilBarrelController : MonoBehaviour
         {
             barrelSlowdown = true;
             playerController.kartSpeed = 5f;
-            StartCoroutine(BarrelSlowdown());
         }
     }
 
-    IEnumerator BarrelSlowdown()
+    public void OnTriggerExit(Collider other)
     {
-        yield return new WaitForSeconds(barrelSpeedDuration);
-        barrelSlowdown = false;
-        playerController.kartSpeed = 20f;
+        if(other.gameObject.CompareTag("Player"))
+        {
+            barrelSlowdown = false;
+            playerController.kartSpeed = 20f;
+        }
     }
 }

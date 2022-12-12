@@ -787,9 +787,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1711730390}
+      - m_Target: {fileID: 1711730392}
         m_TargetAssemblyTypeName: QuestionHandlerOne, Assembly-CSharp
-        m_MethodName: RestartGame
+        m_MethodName: MenuStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -846,30 +846,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1711730391}
-  - component: {fileID: 1711730390}
+  - component: {fileID: 1711730392}
   m_Layer: 0
-  m_Name: QuestionManager
+  m_Name: QuestionHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1711730390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711730389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f234de4c40d633429c48d08fdf09dbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openTrackTwo: {fileID: 0}
-  openTrackThree: {fileID: 0}
-  openTrackFour: {fileID: 0}
-  openTrackFive: {fileID: 0}
 --- !u!4 &1711730391
 Transform:
   m_ObjectHideFlags: 0
@@ -885,6 +869,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1711730392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711730389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f234de4c40d633429c48d08fdf09dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openTrackTwo: {fileID: 0}
+  openTrackThree: {fileID: 0}
+  openTrackFour: {fileID: 0}
+  openTrackFive: {fileID: 0}
+  pitStopController: {fileID: 0}
 --- !u!1 &1797371519
 GameObject:
   m_ObjectHideFlags: 0
