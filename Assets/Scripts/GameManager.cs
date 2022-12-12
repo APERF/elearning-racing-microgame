@@ -8,10 +8,10 @@ public class GameManager : MonoBehaviour
 
     public PitStopController pitStopController;
 
-    private Vector3 playerStart;
+    public Vector3 playerStart;
 
-    private Quaternion playerStartRotation;
-    [SerializeField] public Quaternion otherStartRotation;
+    public Quaternion playerStartRotation;
+    public Quaternion otherStartRotation;
 
     // Start is called before the first frame update
     void Start()

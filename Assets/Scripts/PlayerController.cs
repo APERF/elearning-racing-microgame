@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     public float kartSpeed = 20f;
-    public float turnSpeed = 10f;
-    public float jumpForce = 10f;
+    private float turnSpeed = 90f;
+    private float jumpForce = 375f;
 
     public bool inAir = false;
     public bool jumpPowerUpActivated = false;

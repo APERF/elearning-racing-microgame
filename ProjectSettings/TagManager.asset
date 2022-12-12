@@ -14,6 +14,7 @@ TagManager:
   - Track
   - Pit Stop 4
   - Pit Stop 5
+  - Wall Obstacle
   layers:
   - Default
   - TransparentFX

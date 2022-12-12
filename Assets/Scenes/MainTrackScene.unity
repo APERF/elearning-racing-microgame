@@ -7445,7 +7445,6 @@ MonoBehaviour:
   pitStopTwoPassed: 0
   pitStopThreePassed: 0
   pitStopFourPassed: 0
-  pitStopFivePassed: 0
   pitStopOne: {x: -180.4, y: 0.32, z: -1948.2}
   pitStopTwo: {x: -312.7, y: 0.32, z: -1800.5}
   pitStopThree: {x: -464.8, y: 0.32, z: -1728.3}
@@ -8210,6 +8209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1587548798}
   pitStopController: {fileID: 0}
+  playerStart: {x: 0, y: 0, z: 0}
+  playerStartRotation: {x: 0, y: 0, z: 0, w: 0}
   otherStartRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &1362789757
 Transform:
@@ -10839,6 +10840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 4337450790123841314, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
   pitStopController: {fileID: 0}
+  playerStart: {x: 0, y: 0, z: 0}
+  playerStartRotation: {x: 0, y: 0, z: 0, w: 0}
   otherStartRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1799455286
 PrefabInstance:
@@ -11745,7 +11748,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2033771807926111362, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_Convex
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4337450790123841314, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_Name
@@ -11754,6 +11757,10 @@ PrefabInstance:
     - target: {fileID: 4338997771549868402, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: jumpForce
       value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338997771549868402, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
+      propertyPath: turnSpeed
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4338997771549868405, guid: 9c4a9a46040ca3546b4b5cca75e9aecd, type: 3}
       propertyPath: m_Mass
@@ -12458,6 +12465,10 @@ PrefabInstance:
     - target: {fileID: 6996255201152591925, guid: 5875952ac18f14a4e8726559766c0a26, type: 3}
       propertyPath: m_Name
       value: Wall-Obstacle-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107223253854683399, guid: 5875952ac18f14a4e8726559766c0a26, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5875952ac18f14a4e8726559766c0a26, type: 3}

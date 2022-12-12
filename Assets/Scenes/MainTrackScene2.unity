@@ -8098,6 +8098,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1587548798}
   pitStopController: {fileID: 0}
+  playerStart: {x: 0, y: 0, z: 0}
+  playerStartRotation: {x: 0, y: 0, z: 0, w: 0}
   otherStartRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &1362789757
 Transform:
@@ -10727,6 +10729,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 4337450790123841314, guid: 39b6d6d4291a89d4f8304021afd507e6, type: 3}
   pitStopController: {fileID: 0}
+  playerStart: {x: 0, y: 0, z: 0}
+  playerStartRotation: {x: 0, y: 0, z: 0, w: 0}
   otherStartRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1799455286
 PrefabInstance:
@@ -11633,7 +11637,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2033771807926111362, guid: 39b6d6d4291a89d4f8304021afd507e6, type: 3}
       propertyPath: m_Convex
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4337450790123841314, guid: 39b6d6d4291a89d4f8304021afd507e6, type: 3}
       propertyPath: m_Name

@@ -1033,7 +1033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: b0cdc2fb112651c4bbc2db97beed0020, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: b0cdc2fb112651c4bbc2db97beed0020, type: 3}
       propertyPath: m_LocalScale.y
@@ -1041,11 +1041,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: b0cdc2fb112651c4bbc2db97beed0020, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: b0cdc2fb112651c4bbc2db97beed0020, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -237.71236
+      value: -236.983
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: b0cdc2fb112651c4bbc2db97beed0020, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1053,7 +1053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: b0cdc2fb112651c4bbc2db97beed0020, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 222.49011
+      value: 223.34
       objectReference: {fileID: 0}
     - target: {fileID: 5009656184442576768, guid: b0cdc2fb112651c4bbc2db97beed0020, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8098,6 +8098,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1587548798}
   pitStopController: {fileID: 0}
+  playerStart: {x: 0, y: 0, z: 0}
+  playerStartRotation: {x: 0, y: 0, z: 0, w: 0}
   otherStartRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!4 &1362789757
 Transform:
@@ -10727,6 +10729,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 4337450790123841314, guid: 95f90b5c322a61c4288ce0cac94e6e87, type: 3}
   pitStopController: {fileID: 0}
+  playerStart: {x: 0, y: 0, z: 0}
+  playerStartRotation: {x: 0, y: 0, z: 0, w: 0}
   otherStartRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1799455286
 PrefabInstance:
@@ -11633,7 +11637,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2033771807926111362, guid: 95f90b5c322a61c4288ce0cac94e6e87, type: 3}
       propertyPath: m_Convex
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4337450790123841314, guid: 95f90b5c322a61c4288ce0cac94e6e87, type: 3}
       propertyPath: m_Name
