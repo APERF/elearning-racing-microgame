@@ -21,7 +21,7 @@ public class PitStopOne : MonoBehaviour
             Debug.Log("Load Question 1 Triggered.");
             pitStopController.atStart = false;
             pitStopController.pitStopOnePassed = true;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }

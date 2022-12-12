@@ -26,7 +26,7 @@ public class PitStopFour : MonoBehaviour
             Debug.Log("Load Question 4 Triggered");
             pitStopController.pitStopFourPassed = true;
             pitStopController.pitStopThreePassed = false;
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(8);
         }
     }
 }

@@ -27,7 +27,7 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void OpenTrackTwo()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void OpenQuestionTwo()
@@ -44,7 +44,7 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void OpenTrackThree()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 
     public void OpenQuestionThree()
@@ -61,7 +61,7 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void OpenTrackFour()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
 
     public void OpenQuestionFour()
@@ -78,7 +78,7 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void OpenTrackFive()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(9);
     }
 
     public void OpenQuestionFive()
@@ -95,11 +95,11 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void GameOver()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(11);
     }
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
