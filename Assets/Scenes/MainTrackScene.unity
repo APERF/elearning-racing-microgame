@@ -388,8 +388,8 @@ Transform:
   - {fileID: 103333286}
   - {fileID: 1836569211}
   - {fileID: 400420036}
-  - {fileID: 566503984}
   - {fileID: 1284452882}
+  - {fileID: 566503984}
   m_Father: {fileID: 2005900497}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -631,7 +631,7 @@ MonoBehaviour:
   readyText: {fileID: 289386007}
   goText: {fileID: 2008050096}
   startButton: {fileID: 1831046581}
-  raceStarted: 0
+  pitStopController: {fileID: 0}
 --- !u!4 &76440521
 Transform:
   m_ObjectHideFlags: 0
@@ -3223,7 +3223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276925260861940167, guid: 419b5557461398443a4b99d9496015fc, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7276925260861940167, guid: 419b5557461398443a4b99d9496015fc, type: 3}
       propertyPath: m_LocalScale.y
@@ -4820,7 +4820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9148960239488163218, guid: 87e0acbd6ddf7814097e377d5a5c716d, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 9148960239488163218, guid: 87e0acbd6ddf7814097e377d5a5c716d, type: 3}
       propertyPath: m_LocalScale.y
@@ -7763,6 +7763,7 @@ MonoBehaviour:
   pitStopTwoPassed: 0
   pitStopThreePassed: 0
   pitStopFourPassed: 0
+  raceStarted: 0
   pitStopOne: {x: -180.4, y: 0.32, z: -1948.2}
   pitStopTwo: {x: -312.7, y: 0.32, z: -1800.5}
   pitStopThree: {x: -464.8, y: 0.32, z: -1728.3}

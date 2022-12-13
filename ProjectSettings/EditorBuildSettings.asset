@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: e198b3d0403ccd44ba3d5a27e61f04ca
   - enabled: 1
+    path: Assets/Scenes/InstructionScreen.unity
+    guid: 005100b129851644f926d88924d618de
+  - enabled: 1
+    path: Assets/Scenes/InstructionScreen2.unity
+    guid: 47e441ac3ca5f1f4db66970a999eb7db
+  - enabled: 1
     path: Assets/Scenes/MainTrackScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1

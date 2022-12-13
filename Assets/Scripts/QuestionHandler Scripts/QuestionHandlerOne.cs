@@ -34,7 +34,7 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void OpenTrackTwo()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
 
     public void OpenQuestionTwo()
@@ -51,7 +51,7 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void OpenTrackThree()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(7);
     }
 
     public void OpenQuestionThree()
@@ -68,7 +68,7 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void OpenTrackFour()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(9);
     }
 
     public void OpenQuestionFour()
@@ -80,12 +80,12 @@ public class QuestionHandlerOne : MonoBehaviour
     IEnumerator QuestionFourContinue()
     {
         yield return new WaitForSeconds(questionDelay);
-        openTrackFour.gameObject.SetActive(true);
+        openTrackFive.gameObject.SetActive(true);
     }
 
     public void OpenTrackFive()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(11);
     }
 
     public void OpenQuestionFive()
@@ -102,7 +102,7 @@ public class QuestionHandlerOne : MonoBehaviour
 
     public void GameOver()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene(13);
     }
 
     public void RestartGame()
@@ -113,6 +113,16 @@ public class QuestionHandlerOne : MonoBehaviour
     public void MenuStart()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void NextInstructions()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void StartFromInstruction()
+    {
+        SceneManager.LoadScene(3);
         pitStopController.raceStarted = false;
     }
 }
