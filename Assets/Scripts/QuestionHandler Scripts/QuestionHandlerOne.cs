@@ -20,6 +20,15 @@ public class QuestionHandlerOne : MonoBehaviour
         pitStopController = GameObject.FindObjectOfType<PitStopController>();
     }
 
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Game Exited");
+        }
+    }
+
     public void OpenQuestionOne()
     {
         Application.OpenURL("https://www.google.com");

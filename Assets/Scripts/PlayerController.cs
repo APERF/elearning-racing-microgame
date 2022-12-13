@@ -47,6 +47,12 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             inAir = true;
         }
+
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Game Exited");
+        }
     }
 
     public void OnCollisionEnter(Collision other)
