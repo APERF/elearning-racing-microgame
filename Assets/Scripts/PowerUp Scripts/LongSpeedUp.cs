@@ -22,6 +22,7 @@ public class LongSpeedUp : MonoBehaviour
         {
             longSpeedUpActivated = true;
             playerController.kartSpeed = 40f;
+            playerController.turboEngineSound.Play();
             StartCoroutine(LongPowerUpEffect());
         }
     }
@@ -31,5 +32,6 @@ public class LongSpeedUp : MonoBehaviour
         yield return new WaitForSeconds(longPowerUpDuration);
         longSpeedUpActivated = false;
         playerController.kartSpeed = 20f;
+        playerController.turboEngineSound.Stop();
     }
 }

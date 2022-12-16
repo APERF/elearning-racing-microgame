@@ -18,12 +18,14 @@ public class PlayerController : MonoBehaviour
     public bool inAir = false;
     public bool jumpPowerUpActivated = false;
 
+    public AudioSource accelEngineSound;
+    public AudioSource turboEngineSound;
+    public AudioSource jumpSound;
+
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-
-        startRaceManager = GameObject.FindObjectOfType<StartRaceManager>();
 
         pitStopController = GameObject.FindObjectOfType<PitStopController>();
     }
@@ -46,12 +48,23 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             inAir = true;
+            jumpSound.Play();
         }
 
         if(Input.GetKey(KeyCode.Escape))
         {
             Application.Quit();
             Debug.Log("Game Exited");
+        }
+
+        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            accelEngineSound.Play();
+        }
+
+        else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            accelEngineSound.Stop();
         }
     }
 
@@ -60,6 +73,7 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.CompareTag("Track"))
         {
             inAir = false;
+            jumpSound.Stop();
         }
     }
 }

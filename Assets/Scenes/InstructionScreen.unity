@@ -354,6 +354,7 @@ Transform:
   m_Children:
   - {fileID: 779524998}
   - {fileID: 1591789007}
+  - {fileID: 203853357}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -362,7 +363,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 179681404}
     m_Modifications:
     - target: {fileID: 8387421194003165506, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_Name
@@ -370,39 +371,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 7
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 7
+      value: 0.06999998
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 7
+      value: 69.99998
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -50.9
+      value: -0.2535027
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.5
+      value: 3.943615
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.481049
+      value: -0.14153026
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
       propertyPath: m_LocalRotation.y
@@ -426,6 +427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
+--- !u!4 &203853357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8389816466001430358, guid: 2a22322989a94de4ea14458a8835b4cd, type: 3}
+  m_PrefabInstance: {fileID: 203853356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &440372572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,5 +1930,59 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -2.125, y: 5.677, z: -1.525}
+--- !u!1 &2020578604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020578605}
+  - component: {fileID: 2020578606}
+  m_Layer: 0
+  m_Name: PitStopController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2020578605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020578604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.2971234, y: 14.686601, z: -1999.2804}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020578606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020578604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf347db1aae3fa409a748fec0e6009f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 1
+  pitStopOnePassed: 0
+  pitStopTwoPassed: 0
+  pitStopThreePassed: 0
+  pitStopFourPassed: 0
+  raceStarted: 0
+  pitStopOne: {x: -180.4, y: 0.32, z: -1948.2}
+  pitStopTwo: {x: -312.7, y: 0.32, z: -1800.5}
+  pitStopThree: {x: -464.8, y: 0.32, z: -1728.3}
+  pitStopFour: {x: -357.7, y: 0.32, z: -1531.7}

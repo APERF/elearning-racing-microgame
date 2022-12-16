@@ -28,6 +28,7 @@ public class PowerUpController : MonoBehaviour
         {
             speedUpActivated = true;
             playerController.kartSpeed = 35f;
+            playerController.turboEngineSound.Play();
             StartCoroutine(PowerUpEffect());
         }
     }
@@ -37,5 +38,6 @@ public class PowerUpController : MonoBehaviour
         yield return new WaitForSeconds(powerUpDuration);
         speedUpActivated = false;
         playerController.kartSpeed = 20f;
+        playerController.turboEngineSound.Stop();
     }
 }
